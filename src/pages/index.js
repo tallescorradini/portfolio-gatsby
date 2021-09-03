@@ -1,5 +1,9 @@
 import React from "react"
 
-export default function Home() {
-  return <div>Hello world!</div>
+import { Link } from "gatsby"
+
+const IndexPage = () => {
+  return <div>Hello World!</div>
 }
+
+export default IndexPage
