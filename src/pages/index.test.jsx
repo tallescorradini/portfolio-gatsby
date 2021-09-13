@@ -66,7 +66,7 @@ describe('when navigate contact link is clicked', () => {
 })
 
 describe('when home section project button is clicked', () => {
-  it('should navigate to project section', () => {
+  it('should navigate to project section', async () => {
     render(<IndexPage />)
     const link = screen.getByRole('link', { name: /see projects/i })
     const section = screen.getByTestId('contact')

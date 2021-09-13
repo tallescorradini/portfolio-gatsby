@@ -1,28 +1,18 @@
 import React from 'react'
 
+import NavigationBar from './components/NavigationBar'
+
 const IndexPage = () => {
   return (
     <div>
       <header>
         <a href="#home">talles corradini</a>
-        <nav>
-          <ul>
-            <li>
-              <a href="#home">home</a>
-            </li>
-            <li>
-              <a href="#projects">projects</a>
-            </li>
-            <li>
-              <a href="#contact">contact</a>
-            </li>
-          </ul>
-        </nav>
+        <NavigationBar />
       </header>
       <main>
         <section id="#home" data-testid="home">
           I'm a Front End Web Developer
-          <a href="#projects">Projects</a>
+          <a href="#projects">See projects</a>
         </section>
 
         <section id="#projects" data-testid="projects">
