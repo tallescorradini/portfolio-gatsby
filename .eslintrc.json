@@ -1,0 +1,29 @@
+{
+  "root": true,
+
+  "plugins": ["prettier", "jest", "jest-dom"],
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:jest/all",
+    "plugin:jest-dom/recommended"
+  ],
+  "settings": {
+    "import/core-modules": ["gatsby"]
+  },
+  "globals": {
+    "graphql": true
+  },
+  "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "no-unused-vars": "warn"
+  },
+  "quotes": [2, "single", "avoid-escape"]
+}
