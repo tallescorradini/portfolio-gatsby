@@ -7,11 +7,13 @@ const IndexPage = () => {
   return (
     <div>
       <header>
-        <a className={styles.logo} href="#home">
-          talles corradini
-        </a>
+        <div className={styles.headerWrapper}>
+          <a className={styles.logo} href="#home">
+            talles corradini
+          </a>
 
-        <NavigationBar />
+          <NavigationBar />
+        </div>
       </header>
       <main>
         <section id="home" data-testid="home">

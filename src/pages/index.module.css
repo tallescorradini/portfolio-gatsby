@@ -1,23 +1,34 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  height: 3rem;
-  align-items: center;
   position: fixed;
+  width: 100%;
+  padding: 0 auto;
   top: 0;
   left: 0;
-  width: 100%;
+  height: 3rem;
   background-color: white;
-  padding: 0 1rem 0 1rem;
+  display: flex;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 main {
@@ -26,6 +37,8 @@ main {
 
 section {
   height: 100vh;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 section::before {
@@ -38,5 +51,5 @@ section::before {
 }
 
 .logo {
-  padding: 1rem;
+  display: block;
 }
