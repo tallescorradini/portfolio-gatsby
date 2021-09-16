@@ -10,6 +10,7 @@ const IndexPage = () => {
         <a className={styles.logo} href="#home">
           talles corradini
         </a>
+
         <NavigationBar />
       </header>
       <main>
