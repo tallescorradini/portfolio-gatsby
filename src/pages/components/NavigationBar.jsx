@@ -3,12 +3,6 @@ import Scrollspy from 'react-scrollspy'
 
 import * as styles from './NavigationBar.module.css'
 
-// TODO: [x] feat: update active link with page scroll
-// TODO: [x] feat: add animation to link activation
-// TODO: [x] fix: update url hash with page scroll
-// TODO: [x] feat: add smooth scroll to section
-// TODO: [ ] refactor: anchor tags into reusable component
-
 const NavigationBar = () => {
   return (
     <nav className={styles.navBar}>
