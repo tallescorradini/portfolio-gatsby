@@ -6,9 +6,32 @@
 
 .nav-bar li {
   display: inline;
-  padding: 1rem;
 }
 
-.active-link {
-  color: green;
+.nav-bar a {
+  padding: 1rem 1.25rem;
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 1.25rem;
+  letter-spacing: 0.0625rem;
+  position: relative;
+}
+
+.nav-bar a:hover {
+  color: #3600ce;
+}
+
+.nav-bar .active-link a {
+  color: #3600ce;
+  font-weight: bold;
+}
+
+.nav-bar .active-link a[data-content]::before {
+  content: attr(data-content);
+  margin-top: 1.75rem;
+  height: 3px;
+  position: absolute;
+  background: #3600ce;
+  border-radius: 25%;
+  color: transparent;
 }
