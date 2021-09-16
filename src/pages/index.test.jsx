@@ -16,7 +16,7 @@ describe('when the logo is clicked', () => {
 
     fireEvent.click(link)
     await waitFor(() => {
-      expect(section).toHaveAttribute('id', '#home')
+      expect(section).toHaveAttribute('id', 'home')
       expect(location.hash).toBe('#home')
     })
   })
@@ -30,7 +30,7 @@ describe('when navigation home link is clicked', () => {
 
     fireEvent.click(link)
     await waitFor(() => {
-      expect(section).toHaveAttribute('id', '#home')
+      expect(section).toHaveAttribute('id', 'home')
       expect(location.hash).toBe('#home')
     })
   })
@@ -42,7 +42,7 @@ describe('when navigation projects link is clicked', () => {
     const link = screen.getByText('projects')
     const section = screen.getByTestId('projects')
 
-    expect(section).toHaveAttribute('id', '#projects')
+    expect(section).toHaveAttribute('id', 'projects')
     fireEvent.click(link)
 
     await waitFor(() => {
@@ -59,7 +59,7 @@ describe('when navigate contact link is clicked', () => {
 
     fireEvent.click(link)
     await waitFor(() => {
-      expect(section).toHaveAttribute('id', '#contact')
+      expect(section).toHaveAttribute('id', 'contact')
       expect(location.hash).toBe('#contact')
     })
   })
@@ -73,7 +73,7 @@ describe('when home section project button is clicked', () => {
 
     fireEvent.click(link)
     await waitFor(() => {
-      expect(section).toHaveAttribute('id', '#contact')
+      expect(section).toHaveAttribute('id', 'contact')
       expect(location.hash).toBe('#contact')
     })
   })
