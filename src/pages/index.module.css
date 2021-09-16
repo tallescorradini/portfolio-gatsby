@@ -23,6 +23,15 @@ section {
   height: 100vh;
 }
 
+section::before {
+  display: block;
+  content: ' ';
+  margin-top: -3rem;
+  height: 3rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .logo {
   padding: 1rem;
 }
