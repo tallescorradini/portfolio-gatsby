@@ -26,6 +26,16 @@
   font-weight: bold;
 }
 
+.nav-bar a[data-content]::before {
+  content: attr(data-content);
+  margin-top: 1.75rem;
+  height: 3px;
+  position: absolute;
+  background: transparent;
+  border-radius: 25%;
+  color: transparent;
+}
+
 .nav-bar .active-link a[data-content]::before {
   content: attr(data-content);
   margin-top: 1.75rem;
@@ -34,4 +44,5 @@
   background: #3600ce;
   border-radius: 25%;
   color: transparent;
+  transition: background 0.5s ease;
 }
