@@ -11,6 +11,8 @@ const NavigationBar = () => {
         currentClassName={styles.activeLink}
         offset={-300}
         onUpdate={event => {
+          // condition added to prevent testing errors when event is undefined
+          if (!event) return
           const hash = event.getAttribute('id')
           if (!hash) return
           history.replaceState(undefined, undefined, `#${hash}`)
