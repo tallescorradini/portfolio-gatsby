@@ -65,6 +65,12 @@ describe('when navigate contact link is clicked', () => {
   })
 })
 
+describe('when page scrolls through sections', () => {
+  // This test won't work with jsdom
+  // https://github.com/testing-library/react-testing-library/issues/671
+  it.todo('should reflect on URL')
+})
+
 describe('when home section project button is clicked', () => {
   it('should navigate to project section', async () => {
     render(<IndexPage />)
