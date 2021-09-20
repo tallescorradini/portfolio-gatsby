@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
+  /* TODO: font-family: 'Open Sans', sans-serif; */
 }
 
 body {
@@ -36,9 +37,13 @@ main {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 80%;
   margin: 0 auto;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 section::before {
@@ -56,4 +61,71 @@ section::before {
   font-weight: bold;
   letter-spacing: 0.0625rem;
   color: #2b2b2b;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.0625rem;
+  margin: 1.5rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.0625rem;
+  font-weight: normal;
+}
+
+.button-filled {
+  min-width: 12rem;
+  padding: 1rem 1.5rem;
+  background-color: #3600ce;
+  border-style: solid;
+  border-color: #3600ce;
+  border-width: 2px;
+
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-right: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.button-outlined {
+  min-width: 12rem;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  color: #3600ce;
+
+  border-style: solid;
+  border-color: #3600ce;
+  border-width: 2px;
+
+  border-radius: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+
+  text-decoration: none;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
 }
