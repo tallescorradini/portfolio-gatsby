@@ -1,13 +1,13 @@
 import React from 'react'
 
-import NavigationBar from './components/NavigationBar'
+import NavigationBar from './components/NavigationBar/NavigationBar'
 import HomeSection from './components/HomeSection/HomeSection'
 import * as styles from './index.module.css'
 
 // [x] TODO feat: add project and download CV buttons
 // [x] TODO feat: serve pdf when clicking on download CV button
 // [x] TODO refactor: create HomeSection component
-// [ ] TODO refactor: create NavigtationBar component folder
+// [x] TODO refactor: create NavigtationBar component folder
 // [ ] TODO feat (NavigationBar): add navigation for smaller devices
 
 const IndexPage = () => {
