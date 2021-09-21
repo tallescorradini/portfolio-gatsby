@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Scrollspy from 'react-scrollspy'
 
 import * as styles from './NavigationBar.module.css'
 
 const NavigationBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleMenuButtonClicked = () => {
+    setMenuOpen(prev => !prev)
+  }
+
+  const handleLinkClicked = () => {
+    setMenuOpen(false)
+  }
+
   return (
-    <nav className={styles.navBar}>
+    <nav className={`${styles.navBar}${menuOpen ? ` ${styles.open}` : ''}`}>
       <Scrollspy
         items={['home', 'projects', 'contact']}
         currentClassName={styles.activeLink}
@@ -19,21 +29,31 @@ const NavigationBar = () => {
         }}
       >
         <li>
-          <a href="#home" data-content="home">
+          <a href="#home" data-content="home" onClick={handleLinkClicked}>
             home
           </a>
         </li>
         <li>
-          <a href="#projects" data-content="projects">
+          <a
+            href="#projects"
+            data-content="projects"
+            onClick={handleLinkClicked}
+          >
             projects
           </a>
         </li>
         <li>
-          <a href="#contact" data-content="contact">
+          <a href="#contact" data-content="contact" onClick={handleLinkClicked}>
             contact
           </a>
         </li>
       </Scrollspy>
+      <button
+        className={`${styles.menuButton}${menuOpen ? ` ${styles.open}` : ''}`}
+        onClick={handleMenuButtonClicked}
+      >
+        <span className={`${styles.menuButtonBurger}`}></span>
+      </button>
     </nav>
   )
 }

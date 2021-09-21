@@ -8,7 +8,9 @@ import * as styles from './index.module.css'
 // [x] TODO feat: serve pdf when clicking on download CV button
 // [x] TODO refactor: create HomeSection component
 // [x] TODO refactor: create NavigtationBar component folder
-// [ ] TODO feat (NavigationBar): add navigation for smaller devices
+// [x] TODO feat (NavigationBar): add navigation for smaller devices
+// [x] TODO fix: home section buttons are not working
+// [ ] TODO refactor (NavigationBar): cleanup code
 
 const IndexPage = () => {
   return (
