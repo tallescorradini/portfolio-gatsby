@@ -21,6 +21,8 @@ header {
   height: 3rem;
   background-color: white;
   display: flex;
+
+  z-index: 999;
 }
 
 .header-wrapper {
