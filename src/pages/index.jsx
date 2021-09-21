@@ -11,6 +11,8 @@ import * as styles from './index.module.css'
 // [x] TODO feat (NavigationBar): add navigation for smaller devices
 // [x] TODO fix: home section buttons are not working
 // [x] TODO refactor (NavigationBar): cleanup code
+// [x] TODO fix: show navBar on large devices even when menuButton is open
+// [ ] TODO feat: add clickable arrow to home page
 
 const IndexPage = () => {
   return (
