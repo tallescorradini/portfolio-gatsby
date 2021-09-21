@@ -1,26 +1,27 @@
 .nav-bar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
   position: absolute;
   top: 0;
   left: 0;
-  background: white;
+
   width: 100vw;
   height: 100vh;
-  /* not to overlap components */
-  max-height: 0px;
-  /* to enable fade in/ou animations */
-  opacity: 0;
+  max-height: 0px; /* to hide and not to overlap components */
+  margin: 0;
+  padding: 0;
+
+  background: white;
+  opacity: 0; /* to hide and enable fade in/ou animations */
+  list-style-type: none;
 }
 
 .nav-bar.open ul {
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  max-height: 100vh;
   justify-content: center;
   opacity: 1;
+
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -34,10 +35,12 @@
   background: transparent;
 
   position: relative;
+
   height: 2rem;
   width: 2.5rem;
-  cursor: pointer;
   padding-left: 0.5rem;
+
+  cursor: pointer;
 }
 
 .menu-button:hover .menu-button-burger,
@@ -50,11 +53,14 @@
 .menu-button-burger::before,
 .menu-button-burger::after {
   display: block;
-  background: #2b2b2b;
+
+  position: relative;
+
   width: 1.25rem;
   height: 2px;
+
+  background: #2b2b2b;
   border-radius: 1px;
-  position: relative;
 
   transition: all 0.5s ease-in-out;
 }
@@ -62,6 +68,7 @@
 .menu-button-burger::before,
 .menu-button-burger::after {
   content: '';
+
   position: absolute;
 }
 
@@ -91,14 +98,18 @@
 
 .nav-bar a {
   display: block;
+
+  position: relative;
+
   padding: 1.5rem;
-  color: #2b2b2b;
-  text-decoration: none;
+  margin: 0 auto;
+
+  max-width: 60%;
+
   font-size: 1.5rem;
   letter-spacing: 0.0625rem;
-  position: relative;
-  max-width: 60%;
-  margin: 0 auto;
+  text-decoration: none;
+  color: #2b2b2b;
 }
 
 .nav-bar a:hover {
@@ -106,42 +117,49 @@
 }
 
 .nav-bar .active-link a {
-  color: #3600ce;
   font-weight: bold;
+  color: #3600ce;
 }
 
 .nav-bar a[data-content]::before {
   content: attr(data-content);
-  margin-top: 1.75rem;
-  height: 3px;
+
   position: absolute;
-  background: transparent;
+
+  height: 3px;
+  margin-top: 1.75rem;
+
   border-radius: 25%;
+  background: transparent;
   color: transparent;
 }
 
 .nav-bar .active-link a[data-content]::before {
   content: attr(data-content);
+
+  position: absolute;
+
   margin-top: 1.75rem;
   height: 3px;
-  position: absolute;
-  background: #3600ce;
   border-radius: 25%;
   color: transparent;
+  background: #3600ce;
+
   transition: background 0.5s ease;
 }
 
 @media only screen and (min-width: 768px) {
   .nav-bar ul {
-    list-style-type: none;
+    display: block;
+
     margin: 0;
     padding: 0;
 
-    position: relative;
-
     width: 100%;
     height: 100%;
-    display: block;
+    position: relative;
+
+    list-style-type: none;
   }
 
   .nav-bar li {
@@ -149,10 +167,11 @@
   }
 
   .nav-bar a {
-    padding: 1rem 1.25rem;
-    font-size: 1.125rem;
-
     display: inline;
+
+    padding: 1rem 1.25rem;
+
+    font-size: 1.125rem;
   }
 
   .nav-bar button {

@@ -10,7 +10,7 @@ import * as styles from './index.module.css'
 // [x] TODO refactor: create NavigtationBar component folder
 // [x] TODO feat (NavigationBar): add navigation for smaller devices
 // [x] TODO fix: home section buttons are not working
-// [ ] TODO refactor (NavigationBar): cleanup code
+// [x] TODO refactor (NavigationBar): cleanup code
 
 const IndexPage = () => {
   return (
