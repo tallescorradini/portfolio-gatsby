@@ -24,6 +24,10 @@ const HomeSection = () => {
           Download CV
         </a>
       </div>
+
+      <a href="#projects" className={styles.arrowLink}>
+        <span className={styles.arrowIcon}></span>
+      </a>
     </section>
   )
 }

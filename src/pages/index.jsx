@@ -13,7 +13,7 @@ import * as styles from './index.module.css'
 // [x] TODO refactor (NavigationBar): cleanup code
 // [x] TODO fix: show navBar on large devices even when menuButton is open
 // [x] TODO fix: make header always on top
-// [ ] TODO feat: add clickable arrow to home page
+// [x] TODO feat: add clickable arrow to home page
 
 const IndexPage = () => {
   return (

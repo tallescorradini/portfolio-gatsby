@@ -52,3 +52,56 @@
   flex-wrap: wrap;
   margin-top: 3rem;
 }
+
+.arrow-link {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 4rem;
+
+  position: relative;
+  animation: animate 2s infinite;
+}
+
+.arrow-icon,
+.arrow-icon::before,
+.arrow-icon::after {
+  display: block;
+
+  position: absolute;
+
+  width: 2rem;
+  height: 0.5rem;
+
+  background: #3600ce;
+  border-radius: 0.5rem;
+}
+
+.arrow-icon {
+  transform: rotate(90deg) translateY(-0.5rem);
+}
+
+.arrow-icon::before,
+.arrow-icon::after {
+  content: '';
+  position: absolute;
+
+  width: 1.5rem;
+}
+
+.arrow-icon::before {
+  transform: rotate(-45deg) translateY(0.75rem);
+}
+
+.arrow-icon::after {
+  transform: rotate(45deg) translateY(-0.75rem);
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(1rem);
+    opacity: 1;
+  }
+}
