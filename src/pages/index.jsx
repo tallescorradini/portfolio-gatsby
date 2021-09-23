@@ -5,19 +5,14 @@ import HomeSection from './components/HomeSection/HomeSection'
 import * as styles from './index.module.css'
 import ContactSection from './components/ContactSection/ContactSection'
 
-// [x] TODO feat: add project and download CV buttons
-// [x] TODO feat: serve pdf when clicking on download CV button
-// [x] TODO refactor: create HomeSection component
-// [x] TODO refactor: create NavigtationBar component folder
-// [x] TODO feat (NavigationBar): add navigation for smaller devices
-// [x] TODO fix: home section buttons are not working
-// [x] TODO refactor (NavigationBar): cleanup code
-// [x] TODO fix: show navBar on large devices even when menuButton is open
-// [x] TODO fix: make header always on top
 // [x] TODO feat: add clickable arrow to home page
 // [x] TODO feat: add form to reach out
+// [x] TODO refactor (ContactSection): clean up css
+// [ ] TODO feat: show submission message without leaving the page
+// [ ] TODO feat: add form validation
+// [ ] TODO fix: link to social media
 // [ ] TODO fix: header should not overlap section titles
-// [ ] TODO fix (HomeSection): center arrowIcon
+// [ ] TODO fix (HomeSection): center arrowIcon inside button
 // [ ] TODO fix (NavigationBar): make navigation link unclickable when menu is inactive
 
 const IndexPage = () => {
