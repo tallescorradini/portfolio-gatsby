@@ -103,4 +103,16 @@
 
   border-color: #3600ce;
   background-color: #3600ce;
+
+  cursor: pointer;
+}
+
+.button-filled:hover {
+  border-color: #3f00eb;
+  background-color: #3f00eb;
+}
+
+.button-filled:active {
+  border-color: #4400ff;
+  background-color: #4400ff;
 }

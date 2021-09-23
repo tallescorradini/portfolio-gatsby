@@ -10,10 +10,13 @@ const ContactSection = () => {
       <div className={styles.container}>
         <form
           className={styles.form}
-          name="contact"
-          method="POST"
+          method="post"
+          netlify-honeypot="bot-field"
           data-netlify="true"
+          name="contact"
         >
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
           <div className={styles.field}>
             <input
               id="name"

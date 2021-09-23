@@ -15,7 +15,7 @@ import ContactSection from './components/ContactSection/ContactSection'
 // [x] TODO fix: show navBar on large devices even when menuButton is open
 // [x] TODO fix: make header always on top
 // [x] TODO feat: add clickable arrow to home page
-// [ ] TODO feat: add form to reach out
+// [x] TODO feat: add form to reach out
 // [ ] TODO fix: header should not overlap section titles
 // [ ] TODO fix (HomeSection): center arrowIcon
 // [ ] TODO fix (NavigationBar): make navigation link unclickable when menu is inactive
