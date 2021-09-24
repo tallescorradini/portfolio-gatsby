@@ -8,7 +8,8 @@ import ContactSection from './components/ContactSection/ContactSection'
 // [x] TODO feat: add clickable arrow to home page
 // [x] TODO feat: add form to reach out
 // [x] TODO refactor (ContactSection): clean up css
-// [ ] TODO feat: show submission message without leaving the page
+// [x] TODO feat: show submission message without leaving the page
+// [ ] TODO feat: animate form submission message (using CSSTransition)
 // [ ] TODO feat: add form validation
 // [ ] TODO fix: link to social media
 // [ ] TODO fix: header should not overlap section titles
