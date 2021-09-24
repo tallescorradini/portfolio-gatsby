@@ -235,6 +235,10 @@
   transform: rotate(90deg);
 }
 
+.social-links {
+  padding-top: 1rem;
+}
+
 .social-icons {
   margin-left: -2px;
   margin-right: 0.5rem;
