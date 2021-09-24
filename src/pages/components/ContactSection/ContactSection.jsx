@@ -1,5 +1,12 @@
 import React, { useState } from 'react'
 
+import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
+import {
+  AiFillTwitterSquare,
+  AiFillLinkedin,
+  AiFillGithub,
+} from 'react-icons/ai'
+
 import * as styles from './ContactSection.module.css'
 
 const ContactSection = () => {
@@ -82,8 +89,25 @@ const ContactSection = () => {
             </button>
           </form>
         )}
+        <div className={styles.socialLinks}>
+          <p>You can also find me on:</p>
 
-        <p>You can also find me on:</p>
+          <a
+            href="https://www.linkedin.com/in/tallescorradini/"
+            target="_blank"
+            className={styles.socialIcons}
+          >
+            <FaLinkedin size="3rem" />
+          </a>
+
+          <a
+            href="https://github.com/tallescorradini"
+            target="_blank"
+            className={styles.socialIcons}
+          >
+            <FaGithubSquare size="3rem" />
+          </a>
+        </div>
       </div>
     </section>
   )

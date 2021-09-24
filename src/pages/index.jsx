@@ -9,12 +9,14 @@ import ContactSection from './components/ContactSection/ContactSection'
 // [x] TODO feat: add form to reach out
 // [x] TODO refactor (ContactSection): clean up css
 // [x] TODO feat: show submission message without leaving the page
-// [ ] TODO feat: animate form submission message (using CSSTransition)
-// [ ] TODO feat: add form validation
-// [ ] TODO fix: link to social media
+// [x] TODO feat: link to social media
+// [ ] TODO fix: remove first input field top margin
 // [ ] TODO fix: header should not overlap section titles
 // [ ] TODO fix (HomeSection): center arrowIcon inside button
 // [ ] TODO fix (NavigationBar): make navigation link unclickable when menu is inactive
+
+// [ ] TODO feat: add form validation
+// [ ] TODO feat: animate form submission message (using CSSTransition)
 
 const IndexPage = () => {
   return (
