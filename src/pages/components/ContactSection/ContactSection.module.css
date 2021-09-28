@@ -239,6 +239,11 @@
   padding-top: 1rem;
 }
 
+.social-links-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .social-icons {
   margin-left: -2px;
   margin-right: 0.5rem;

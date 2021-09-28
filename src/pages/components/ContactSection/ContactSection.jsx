@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import {
   AiFillTwitterSquare,
   AiFillLinkedin,
@@ -91,22 +91,23 @@ const ContactSection = () => {
         )}
         <div className={styles.socialLinks}>
           <p>You can also find me on:</p>
+          <div className={styles.socialLinksWrapper}>
+            <a
+              href="https://www.linkedin.com/in/tallescorradini/"
+              target="_blank"
+              className={styles.socialIcons}
+            >
+              <AiFillLinkedin size="3rem" />
+            </a>
 
-          <a
-            href="https://www.linkedin.com/in/tallescorradini/"
-            target="_blank"
-            className={styles.socialIcons}
-          >
-            <FaLinkedin size="3rem" />
-          </a>
-
-          <a
-            href="https://github.com/tallescorradini"
-            target="_blank"
-            className={styles.socialIcons}
-          >
-            <FaGithubSquare size="3rem" />
-          </a>
+            <a
+              href="https://github.com/tallescorradini"
+              target="_blank"
+              className={styles.socialIcons}
+            >
+              <AiFillGithub size="2.875rem" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
