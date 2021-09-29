@@ -52,7 +52,6 @@ main > section {
 main > section::before {
   display: block;
   content: ' ';
-  margin-top: -3rem;
   height: 3rem;
   visibility: hidden;
   pointer-events: none;
