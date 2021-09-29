@@ -61,7 +61,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 2.5rem;
-  max-height: 100%;
 }
 
 .button-filled {
@@ -112,5 +111,26 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
+  .project {
+    margin: 1.5rem 0 8.5rem 0;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 1rem;
+    border: solid 5px #efefef;
+  }
+
+  .button-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.5rem;
+    margin-left: -5vw;
+  }
+
+  .button-wrapper > button {
+    width: 10rem;
+    margin-right: 1rem;
+  }
 }

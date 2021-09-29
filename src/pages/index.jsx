@@ -12,7 +12,7 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 // [x] TODO feat: show submission message without leaving the page
 // [x] TODO feat: link to social media
 // [x] TODO fix: align contact section on large screens
-// [ ] TODO feat: add projects section (1/3)
+// [ ] TODO feat: add projects section (2/3)
 // [ ] TODO fix: header should not overlap section titles
 // [ ] TODO fix (HomeSection): center arrowIcon inside button
 // [ ] TODO fix (NavigationBar): make navigation link unclickable when menu is inactive
