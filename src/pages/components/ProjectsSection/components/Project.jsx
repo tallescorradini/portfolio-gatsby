@@ -31,13 +31,19 @@ const Project = ({ displayType }) => {
           </ul>
         </section>
       </div>
-      <div className={styles.imageContainer}>
-        <img src="https://via.placeholder.com/800x450" alt="Website snapshot" />
-      </div>
 
-      <div className={styles.buttonWrapper}>
-        <button className={styles.buttonFilled}>site</button>
-        <button className={styles.buttonOutlined}>{`<code/>`}</button>
+      <div className={styles.linksContainer}>
+        <div className={styles.imageContainer}>
+          <img
+            src="https://via.placeholder.com/800x450"
+            alt="Website snapshot"
+          />
+        </div>
+
+        <div className={styles.buttonWrapper}>
+          <button className={styles.buttonFilled}>site</button>
+          <button className={styles.buttonOutlined}>{`<code/>`}</button>
+        </div>
       </div>
     </article>
   )

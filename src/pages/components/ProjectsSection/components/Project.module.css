@@ -118,7 +118,7 @@
     padding-left: 5vw;
     padding-right: 5vw;
     border-radius: 1rem;
-    border: solid 5px #efefef;
+    border: solid 6px #efefef;
   }
 
   .button-wrapper {
@@ -131,6 +131,93 @@
 
   .button-wrapper > button {
     width: 10rem;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .project {
+    display: flex;
+    padding: 1.5rem 0 2.5rem 0;
+    border: none;
+    margin-bottom: 6.5rem;
+  }
+
+  .project p {
+    width: 50ch;
+  }
+
+  .content-box {
+    flex-grow: 1;
+    padding-right: 2rem;
+  }
+
+  .description-box {
+    background: #efefef;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    margin-right: -4rem;
+  }
+
+  .section-tech li {
+    font-size: 1rem;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 30vw;
+    padding-top: 3rem;
+  }
+
+  .image-container {
+    display: block;
+  }
+
+  .image-container > img {
+    width: 100%;
+    min-width: 20vw;
+
+    border-radius: 1rem;
+    border: solid 6px #efefef;
+  }
+
+  .button-wrapper {
+    position: static;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .button-wrapper > button {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+
+  /* SECONDARY  */
+
+  .project.secondary {
+    background: white;
+    flex-direction: row-reverse;
+  }
+
+  .project.secondary .content-box {
+    padding-left: 3rem;
+    padding-right: 0;
+  }
+
+  .project.secondary .links-container {
+    align-items: flex-start;
+  }
+
+  .project.secondary .description-box {
+    padding: 1rem 5rem;
+    margin-right: 0;
+    margin-left: -5rem;
+  }
+
+  .project.secondary .button-wrapper > button {
+    margin-left: 0;
     margin-right: 1rem;
   }
 }
