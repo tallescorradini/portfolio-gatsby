@@ -6,10 +6,8 @@ import * as styles from './index.module.css'
 import ContactSection from './components/ContactSection/ContactSection'
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
-// [x] TODO fix (HomeSection): center arrowIcon inside button
-// [ ] TODO fix (NavigationBar): make navigation link unclickable when menu is inactive
-// [ ] TODO fix (HomeSection): set smaller font-size for small screens
-// [ ] TODO feat (HomeSection): improve spacing
+// [x] TODO fix (NavigationBar): hide navigation links when not open
+// [ ] TODO fix (HomeSection): balance spacing and sizes for all screen sizes
 // [ ] TODO fix (ProjectsSection): clean up css
 
 // [ ] TODO feat: add form validation

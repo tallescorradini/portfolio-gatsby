@@ -5,7 +5,7 @@
 
   width: 100vw;
   height: 100vh;
-  max-height: 0px; /* to hide and not to overlap components */
+  max-height: 0; /* not to overlap page buttons when navbar is not open */
   margin: 0;
   padding: 0;
 
@@ -14,15 +14,24 @@
   list-style-type: none;
 }
 
+.nav-bar li {
+  display: none;
+}
+
 .nav-bar.open ul {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   max-height: 100vh;
-  justify-content: center;
+
   opacity: 1;
 
   transition: opacity 0.4s ease-in-out;
+}
+
+.nav-bar.open li {
+  display: block;
 }
 
 .menu-button {
@@ -148,7 +157,7 @@
   transition: background 0.5s ease;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .nav-bar ul,
   .nav-bar.open ul {
     display: inline;
@@ -160,19 +169,27 @@
     opacity: 1;
   }
 
-  .nav-bar li {
+  .nav-bar li,
+  .nav-bar.open li {
     display: inline;
   }
 
   .nav-bar a {
     display: inline;
 
-    padding: 1rem 1.25rem;
+    padding: 1rem 0.75rem;
 
     font-size: 1.125rem;
   }
 
   .nav-bar button {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .nav-bar a {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
