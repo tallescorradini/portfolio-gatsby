@@ -6,8 +6,8 @@ import * as styles from './index.module.css'
 import ContactSection from './components/ContactSection/ContactSection'
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
-// [x] TODO fix (NavigationBar): hide navigation links when not open
-// [ ] TODO fix (HomeSection): balance spacing and sizes for all screen sizes
+// [x] TODO fix (HomeSection): balance spacing and sizes for all screen sizes
+// [x] TODO fix (HomeSection): animate down arrow link
 // [ ] TODO fix (ProjectsSection): clean up css
 
 // [ ] TODO feat: add form validation

@@ -1,56 +1,55 @@
-.button-filled {
-  min-width: 12rem;
-  padding: 1rem 1.5rem;
-  background-color: #3600ce;
-  border-style: solid;
-  border-color: #3600ce;
-  border-width: 2px;
-
-  color: white;
-  border-radius: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.0625rem;
-
-  font-size: 0.875rem;
-  font-weight: bold;
-  margin-right: 1.25rem;
-  margin-bottom: 0.75rem;
-  font-family: inherit;
-
-  cursor: pointer;
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.button-outlined {
-  min-width: 12rem;
-  padding: 1rem 1.5rem;
-  background-color: white;
-  color: #3600ce;
-
-  border-style: solid;
-  border-color: #3600ce;
-  border-width: 2px;
-
-  border-radius: 0.5rem;
-  text-align: center;
-  text-transform: uppercase;
+.title {
+  font-size: 2rem;
   letter-spacing: 0.0625rem;
+}
 
-  text-decoration: none;
+.subtitle {
+  display: inline-block;
 
-  font-size: 0.875rem;
-  font-weight: bold;
-  margin-bottom: 0.75rem;
-  font-family: inherit;
+  max-width: 40ch;
+  margin: 0.75rem 0 1.25rem 0;
 
-  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .button-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 3rem;
+  flex-direction: column;
+
+  margin-top: 2rem;
+}
+
+.button-filled {
+  display: none;
+}
+
+.button-outlined {
+  padding: 1rem 1.5rem;
+
+  background-color: white;
+  border-style: solid;
+  border-color: #3600ce;
+  border-width: 2px;
+  border-radius: 0.5rem;
+
+  color: #3600ce;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  font-family: inherit;
+
+  cursor: pointer;
 }
 
 .arrow-link {
@@ -58,6 +57,7 @@
 
   width: 4rem;
   height: 4rem;
+  margin-bottom: 2rem;
 
   animation: animate 2s infinite;
 }
@@ -83,6 +83,7 @@
 .arrow-icon::before,
 .arrow-icon::after {
   content: '';
+
   position: absolute;
 
   width: 1.5rem;
@@ -95,7 +96,7 @@
 .arrow-icon::after {
   transform: rotate(45deg) translateY(-0.75rem);
 }
-/* 
+
 @keyframes animate {
   from {
     opacity: 0;
@@ -104,4 +105,51 @@
     transform: translateY(1rem);
     opacity: 1;
   }
-} */
+}
+
+@media only screen and (min-width: 600px) {
+  .headingContainer {
+    margin-top: -5rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+    letter-spacing: 0.0625rem;
+  }
+
+  .subtitle {
+    font-size: 1.75rem;
+  }
+
+  .button-wrapper {
+    flex-direction: row;
+
+    margin-top: 3rem;
+  }
+
+  .button-filled {
+    display: block;
+
+    padding: 1rem 1.5rem;
+
+    background-color: #3600ce;
+    border-style: solid;
+    border-color: #3600ce;
+    border-width: 2px;
+
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    margin-right: 1.5rem;
+    font-family: inherit;
+
+    cursor: pointer;
+  }
+}
