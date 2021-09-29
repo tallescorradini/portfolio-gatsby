@@ -6,9 +6,7 @@ import * as styles from './index.module.css'
 import ContactSection from './components/ContactSection/ContactSection'
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
-// [x] TODO fix (HomeSection): balance spacing and sizes for all screen sizes
-// [x] TODO fix (HomeSection): animate down arrow link
-// [ ] TODO fix (ProjectsSection): clean up css
+// [x] TODO refactor (ProjectsSection): clean up css
 
 // [ ] TODO feat: add form validation
 // [ ] TODO feat: animate form submission message (using CSSTransition)

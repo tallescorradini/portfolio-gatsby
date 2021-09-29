@@ -11,11 +11,12 @@
 }
 
 .secondary {
-  background: #efefef;
   margin-left: -10vw;
   margin-right: -10vw;
   padding-left: 10vw;
   padding-right: 10vw;
+
+  background: #efefef;
 }
 
 .secondary .section-tech li {
@@ -33,6 +34,7 @@
 
 .section-tech .title {
   margin-top: 2.5rem;
+
   font-size: 1.125rem;
 }
 
@@ -40,16 +42,20 @@
   margin: 0;
   margin-top: 1.5rem;
   padding: 0;
+
   list-style-type: none;
 }
 
 .section-tech li {
   display: inline-block;
+
   margin-right: 0.75rem;
   margin-bottom: 0.5rem;
   padding: 0.5rem 1rem;
+
   background-color: #ebe3ff;
   border-radius: 0.5rem;
+
   font-size: 0.75rem;
 }
 
@@ -60,27 +66,28 @@
 .button-wrapper {
   display: flex;
   flex-direction: column;
+
   margin-top: 2.5rem;
 }
 
 .button-filled {
   max-height: 3.5rem;
+  margin-bottom: 0.75rem;
   padding: 1rem 1.5rem;
+
   background-color: #3600ce;
   border-style: solid;
   border-color: #3600ce;
   border-width: 2px;
+  border-radius: 0.5rem;
 
   color: white;
-  border-radius: 0.5rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
-
   font-size: 0.875rem;
   font-weight: bold;
-  margin-bottom: 0.75rem;
   font-family: inherit;
 
   cursor: pointer;
@@ -88,24 +95,22 @@
 
 .button-outlined {
   max-height: 3.5rem;
+  margin-bottom: 0.75rem;
   padding: 1rem 1.5rem;
-  background-color: white;
-  color: #3600ce;
 
+  background-color: white;
   border-style: solid;
   border-color: #3600ce;
   border-width: 2px;
-
   border-radius: 0.5rem;
+
+  color: #3600ce;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
-
   text-decoration: none;
-
   font-size: 0.875rem;
   font-weight: bold;
-  margin-bottom: 0.75rem;
   font-family: inherit;
 
   cursor: pointer;
@@ -114,17 +119,19 @@
 @media only screen and (min-width: 600px) {
   .project {
     margin: 1.5rem 0 8.5rem 0;
-
     padding-left: 5vw;
     padding-right: 5vw;
+
     border-radius: 1rem;
     border: solid 6px #efefef;
   }
 
   .button-wrapper {
-    position: absolute;
     display: flex;
     flex-direction: row;
+
+    position: absolute;
+
     margin-top: 4.5rem;
     margin-left: -5vw;
   }
@@ -138,9 +145,11 @@
 @media only screen and (min-width: 1200px) {
   .project {
     display: flex;
-    padding: 1.5rem 0 2.5rem 0;
-    border: none;
+
     margin-bottom: 6.5rem;
+    padding: 1.5rem 0 2.5rem 0;
+
+    border: none;
   }
 
   .project p {
@@ -149,14 +158,16 @@
 
   .content-box {
     flex-grow: 1;
+
     padding-right: 2rem;
   }
 
   .description-box {
+    margin-right: -4rem;
+    padding: 1rem 3rem;
+
     background: #efefef;
     border-radius: 0.5rem;
-    padding: 1rem 3rem;
-    margin-right: -4rem;
   }
 
   .section-tech li {
@@ -167,6 +178,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
     max-width: 30vw;
     padding-top: 3rem;
   }
@@ -184,8 +196,10 @@
   }
 
   .button-wrapper {
-    position: static;
     display: block;
+
+    position: static;
+
     margin: 1rem 0;
   }
 
@@ -197,8 +211,9 @@
   /* SECONDARY  */
 
   .project.secondary {
-    background: white;
     flex-direction: row-reverse;
+
+    background: white;
   }
 
   .project.secondary .content-box {
@@ -211,9 +226,9 @@
   }
 
   .project.secondary .description-box {
-    padding: 1rem 5rem;
     margin-right: 0;
     margin-left: -5rem;
+    padding: 1rem 5rem;
   }
 
   .project.secondary .button-wrapper > button {
