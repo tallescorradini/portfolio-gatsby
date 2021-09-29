@@ -4,6 +4,7 @@ import NavigationBar from './components/NavigationBar/NavigationBar'
 import HomeSection from './components/HomeSection/HomeSection'
 import * as styles from './index.module.css'
 import ContactSection from './components/ContactSection/ContactSection'
+import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
 // [x] TODO feat: add clickable arrow to home page
 // [x] TODO feat: add form to reach out
@@ -11,6 +12,7 @@ import ContactSection from './components/ContactSection/ContactSection'
 // [x] TODO feat: show submission message without leaving the page
 // [x] TODO feat: link to social media
 // [x] TODO fix: align contact section on large screens
+// [ ] TODO feat: add projects section (1/3)
 // [ ] TODO fix: header should not overlap section titles
 // [ ] TODO fix (HomeSection): center arrowIcon inside button
 // [ ] TODO fix (NavigationBar): make navigation link unclickable when menu is inactive
@@ -33,9 +35,7 @@ const IndexPage = () => {
       <main>
         <HomeSection />
 
-        <section id="projects" data-testid="projects">
-          Projects
-        </section>
+        <ProjectsSection />
 
         <ContactSection />
       </main>

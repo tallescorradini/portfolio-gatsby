@@ -1,0 +1,116 @@
+.project {
+  padding: 1.5rem 0 2.5rem 0;
+}
+
+.project .title {
+  font-size: 1.75rem;
+}
+
+.primary {
+  background: white;
+}
+
+.secondary {
+  background: #efefef;
+  margin-left: -10vw;
+  margin-right: -10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.secondary .section-tech li {
+  background-color: #d8caff;
+}
+
+.description-box {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+.description-box p {
+  margin-top: 2.5rem;
+}
+
+.section-tech .title {
+  margin-top: 2.5rem;
+  font-size: 1.125rem;
+}
+
+.section-tech ul {
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.section-tech li {
+  display: inline-block;
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ebe3ff;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.image-container {
+  display: none;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  max-height: 100%;
+}
+
+.button-filled {
+  max-height: 3.5rem;
+  padding: 1rem 1.5rem;
+  background-color: #3600ce;
+  border-style: solid;
+  border-color: #3600ce;
+  border-width: 2px;
+
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.button-outlined {
+  max-height: 3.5rem;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  color: #3600ce;
+
+  border-style: solid;
+  border-color: #3600ce;
+  border-width: 2px;
+
+  border-radius: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+
+  text-decoration: none;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+}
