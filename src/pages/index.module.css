@@ -27,10 +27,10 @@ header {
 
 .header-wrapper {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  max-width: 80%;
+  width: 80%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -40,7 +40,8 @@ main {
 
 main > section {
   min-height: 100vh;
-  max-width: 80%;
+  width: 80%;
+  max-width: 1300px;
   margin: 0 auto;
   padding-bottom: 6rem;
   display: flex;
