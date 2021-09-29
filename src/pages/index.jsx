@@ -6,10 +6,11 @@ import * as styles from './index.module.css'
 import ContactSection from './components/ContactSection/ContactSection'
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
-// [x] TODO fix: header should not overlap section titles
-// [ ] TODO fix (HomeSection): center arrowIcon inside button
+// [x] TODO fix (HomeSection): center arrowIcon inside button
 // [ ] TODO fix (NavigationBar): make navigation link unclickable when menu is inactive
-// [ ] TODO fix: (HomeSection): set smaller font-size for small screens
+// [ ] TODO fix (HomeSection): set smaller font-size for small screens
+// [ ] TODO feat (HomeSection): improve spacing
+// [ ] TODO fix (ProjectsSection): clean up css
 
 // [ ] TODO feat: add form validation
 // [ ] TODO feat: animate form submission message (using CSSTransition)
