@@ -37,6 +37,14 @@ header {
   margin: 0 auto;
 }
 
+.logo {
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 0.0625rem;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
 main {
   margin-top: 3rem;
 }
@@ -49,6 +57,7 @@ main > section {
   width: 80%;
   max-width: 1300px;
   min-height: 100vh;
+  height: 100%;
   margin: -3rem auto 6rem auto;
 }
 
@@ -63,6 +72,11 @@ main > section::before {
   pointer-events: none;
 }
 
+main > section:last-child {
+  min-height: 70vh;
+  margin-bottom: 5rem;
+}
+
 main > section h2 {
   margin: 1.5rem 0;
 
@@ -70,10 +84,32 @@ main > section h2 {
   letter-spacing: 0.0625rem;
 }
 
-.logo {
-  font-size: 1.125rem;
+footer {
+  background: #efefef;
+  padding: 1.5rem 0;
+}
+
+footer span {
   font-weight: bold;
-  letter-spacing: 0.0625rem;
-  color: #2b2b2b;
-  text-decoration: none;
+}
+
+footer * {
+  font-size: 0.875rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+@media only screen and (min-width: 900px) {
+  .footer-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
 }

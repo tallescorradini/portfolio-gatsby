@@ -1,7 +1,7 @@
 import React from 'react'
 
 import * as styles from './HomeSection.module.css'
-import resumeFile from './downloads/Talles_Corradini_Resume.pdf'
+import resumeFile from '../../../pages/downloads/Talles_Corradini_Resume.pdf'
 
 const HomeSection = () => {
   return (
