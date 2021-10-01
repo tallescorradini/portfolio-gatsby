@@ -55,7 +55,7 @@
 .menu-button:hover .menu-button-burger,
 .menu-button:hover .menu-button-burger::before,
 .menu-button:hover .menu-button-burger::after {
-  background: #3600ce;
+  background: #5925eb;
 }
 
 .menu-button-burger,
@@ -118,16 +118,15 @@
   font-size: 1.5rem;
   letter-spacing: 0.0625rem;
   text-decoration: none;
-  color: #2b2b2b;
 }
 
 .nav-bar a:hover {
-  color: #3600ce;
+  color: #5925eb;
 }
 
 .nav-bar .active-link a {
   font-weight: bold;
-  color: #3600ce;
+  color: #5925eb;
 }
 
 .nav-bar a[data-content]::before {
@@ -152,7 +151,7 @@
   height: 3px;
   border-radius: 25%;
   color: transparent;
-  background: #3600ce;
+  background: #5925eb;
 
   transition: background 0.5s ease;
 }

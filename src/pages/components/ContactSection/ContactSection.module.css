@@ -8,7 +8,7 @@
   margin-top: 0.5rem;
 
   border-radius: 0.15625rem;
-  background: #3600ce;
+  background: #5925eb;
 }
 
 .container {
@@ -49,7 +49,7 @@
   padding-left: 0.9375rem;
 
   outline: none;
-  border-color: #3600ce;
+  border-color: #5925eb;
   border-width: 2px;
 }
 
@@ -111,14 +111,14 @@
   text-transform: uppercase;
   color: white;
 
-  border-color: #3600ce;
-  background-color: #3600ce;
+  border-color: #5925eb;
+  background-color: #5925eb;
   cursor: pointer;
 }
 
 .button-filled:hover {
-  border-color: #3f00eb;
-  background-color: #3f00eb;
+  border-color: #6536e9;
+  background-color: #6536e9;
 }
 
 [role='alert'] {
@@ -251,5 +251,5 @@
 }
 
 .social-icons:hover {
-  color: #3f00eb;
+  color: #6536e9;
 }

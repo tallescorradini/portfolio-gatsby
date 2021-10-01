@@ -35,11 +35,11 @@
 
   background-color: white;
   border-style: solid;
-  border-color: #3600ce;
+  border-color: #5925eb;
   border-width: 2px;
   border-radius: 0.5rem;
 
-  color: #3600ce;
+  color: #5925eb;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.0625rem;
@@ -50,6 +50,11 @@
   font-family: inherit;
 
   cursor: pointer;
+}
+
+.button-outlined:hover {
+  background-color: #f5f1ff;
+  border-color: #6536e9;
 }
 
 .arrow-link {
@@ -72,7 +77,7 @@
   width: 2rem;
   height: 0.5rem;
 
-  background: #3600ce;
+  background: #5925eb;
   border-radius: 0.5rem;
 }
 
@@ -132,9 +137,9 @@
 
     padding: 1rem 1.5rem;
 
-    background-color: #3600ce;
+    background-color: #5925eb;
     border-style: solid;
-    border-color: #3600ce;
+    border-color: #5925eb;
     border-width: 2px;
 
     color: white;
@@ -151,5 +156,10 @@
     font-family: inherit;
 
     cursor: pointer;
+  }
+
+  .button-filled:hover {
+    background-color: #6536e9;
+    border-color: #6536e9;
   }
 }
