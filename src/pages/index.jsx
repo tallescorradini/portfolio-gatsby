@@ -8,8 +8,7 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
 import resumeFile from './downloads/Talles_Corradini_Resume.pdf'
 
-// [x] TODO feat: update color palette (design v2)
-// [ ] TODO feat: update home section with v2 design
+// [x] TODO feat: update home section (v2 design)
 // [ ] TODO feat: populate projects with actual data
 // [ ] TODO feat: add project description for github
 

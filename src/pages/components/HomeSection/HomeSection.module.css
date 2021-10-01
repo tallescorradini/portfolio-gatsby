@@ -4,9 +4,21 @@
   justify-content: space-between;
 }
 
+.introduction {
+  font-size: 1.125rem;
+  letter-spacing: 0.0625rem;
+  color: #5925eb;
+  margin-top: 2rem;
+}
+
+.introduction-large {
+  display: none;
+}
+
 .title {
   font-size: 2rem;
   letter-spacing: 0.0625rem;
+  font-family: 'Lexend Deca';
 }
 
 .subtitle {
@@ -15,15 +27,14 @@
   max-width: 40ch;
   margin: 0.75rem 0 1.25rem 0;
 
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: normal;
 }
 
 .button-wrapper {
   display: flex;
   flex-direction: column;
-
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .button-filled {
@@ -117,6 +128,17 @@
     margin-top: -5rem;
   }
 
+  .introduction {
+    display: none;
+  }
+
+  .introduction-large {
+    display: block;
+    font-size: 1.125rem;
+    letter-spacing: 0.0625rem;
+    color: #5925eb;
+  }
+
   .title {
     font-size: 2.25rem;
     letter-spacing: 0.0625rem;
@@ -129,7 +151,7 @@
   .button-wrapper {
     flex-direction: row;
 
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   .button-filled {
