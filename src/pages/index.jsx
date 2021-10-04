@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import * as styles from './index.module.css'
+import logo from '../../static/logo-192.svg'
 import NavigationBar from './components/NavigationBar/NavigationBar'
 import HomeSection from './components/HomeSection/HomeSection'
 import ContactSection from './components/ContactSection/ContactSection'
@@ -16,7 +17,8 @@ const IndexPage = () => {
       <header>
         <div className={styles.headerWrapper}>
           <a className={styles.logo} href="#home">
-            talles corradini
+            <img src={logo} />
+            <span>Talles Corradini</span>
           </a>
 
           <NavigationBar />

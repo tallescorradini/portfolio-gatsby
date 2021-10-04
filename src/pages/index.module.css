@@ -47,10 +47,19 @@ header {
 }
 
 .logo {
-  font-size: 1.125rem;
-  font-weight: bold;
-  letter-spacing: 0.0625rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
   text-decoration: none;
+}
+
+.logo > img {
+  max-height: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.logo > span {
+  display: none;
 }
 
 main {
@@ -113,6 +122,16 @@ footer * {
   width: 80%;
   margin: 0 auto;
   max-width: 1300px;
+}
+
+@media only screen and (min-width: 600px) {
+  .logo > span {
+    display: inline;
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 0.0625rem;
+    text-decoration: none;
+  }
 }
 
 @media only screen and (min-width: 900px) {
