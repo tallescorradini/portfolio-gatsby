@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 import * as styles from './index.module.css'
 import NavigationBar from './components/NavigationBar/NavigationBar'
@@ -8,17 +9,10 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
 import resumeFile from './downloads/Talles_Corradini_Resume.pdf'
 
-// [x] TODO feat: update home section (v2 design)
-// [ ] TODO feat: populate projects with actual data
-// [ ] TODO feat: add project description for github
-
-// [ ] TODO feat: add form validation
-// [ ] TODO feat: animate form submission message (using CSSTransition)
-// [ ] TODO feat: add dark mode
-
 const IndexPage = () => {
   return (
     <div>
+      <Helmet title="Talles Corradini" />
       <header>
         <div className={styles.headerWrapper}>
           <a className={styles.logo} href="#home">
