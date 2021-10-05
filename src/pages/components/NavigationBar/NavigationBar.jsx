@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Scrollspy from 'react-scrollspy'
+import { Trans } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './NavigationBar.module.css'
 
@@ -30,7 +31,7 @@ const NavigationBar = () => {
       >
         <li>
           <a href="#home" data-content="home" onClick={handleLinkClicked}>
-            home
+            <Trans>home</Trans>
           </a>
         </li>
         <li>
@@ -39,12 +40,12 @@ const NavigationBar = () => {
             data-content="projects"
             onClick={handleLinkClicked}
           >
-            projects
+            <Trans>projects</Trans>
           </a>
         </li>
         <li>
           <a href="#contact" data-content="contact" onClick={handleLinkClicked}>
-            contact
+            <Trans>contact</Trans>
           </a>
         </li>
       </Scrollspy>

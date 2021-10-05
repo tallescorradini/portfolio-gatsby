@@ -1,11 +1,6 @@
 import React, { useState } from 'react'
-
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import {
-  AiFillTwitterSquare,
-  AiFillLinkedin,
-  AiFillGithub,
-} from 'react-icons/ai'
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { Trans } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './ContactSection.module.css'
 
@@ -30,7 +25,9 @@ const ContactSection = () => {
 
   return (
     <section id="contact" data-testid="contact">
-      <h2 className={styles.title}>Contact</h2>
+      <h2 className={styles.title}>
+        <Trans>Contact</Trans>
+      </h2>
 
       <div className={styles.container}>
         {formSubmitted ? (
@@ -59,7 +56,9 @@ const ContactSection = () => {
                 placeholder=" "
                 className={styles.input}
               ></input>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">
+                <Trans>Name</Trans>
+              </label>
             </div>
             <div className={styles.field}>
               <input
@@ -81,16 +80,20 @@ const ContactSection = () => {
                 className={styles.input}
                 rows="4"
               ></textarea>
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">
+                <Trans>Message</Trans>
+              </label>
             </div>
 
             <button type="submit" className={styles.buttonFilled}>
-              Send
+              <Trans>Send</Trans>
             </button>
           </form>
         )}
         <div className={styles.socialLinks}>
-          <p>You can also find me on:</p>
+          <p>
+            <Trans>You can also find me on:</Trans>
+          </p>
           <div className={styles.socialLinksWrapper}>
             <a
               href="https://www.linkedin.com/in/tallescorradini/"

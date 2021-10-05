@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './Project.module.css'
 
 const Project = ({ displayType }) => {
+  const { t } = useTranslation()
   return (
     <article className={`${styles.project} ${styles[displayType]}`}>
       <div className={styles.contentBox}>
@@ -18,7 +20,9 @@ const Project = ({ displayType }) => {
         </div>
 
         <section className={styles.sectionTech}>
-          <h4 className={styles.title}>Technology stack</h4>
+          <h4 className={styles.title}>
+            <Trans>Technology stack</Trans>
+          </h4>
           <ul role="list">
             <li>Gatsby</li>
             <li>Jest</li>
@@ -42,7 +46,7 @@ const Project = ({ displayType }) => {
 
         <div className={styles.buttonWrapper}>
           <button className={styles.buttonFilled}>site</button>
-          <button className={styles.buttonOutlined}>{`<code/>`}</button>
+          <button className={styles.buttonOutlined}>{`<${t('code')}/>`}</button>
         </div>
       </div>
     </article>

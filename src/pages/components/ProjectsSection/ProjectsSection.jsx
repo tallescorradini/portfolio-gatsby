@@ -1,6 +1,7 @@
 import React from 'react'
-import Project from './components/Project'
+import { Trans } from 'gatsby-plugin-react-i18next'
 
+import Project from './components/Project'
 import * as styles from './ProjectsSection.module.css'
 
 const getProjectDisplayType = index => {
@@ -11,7 +12,9 @@ const getProjectDisplayType = index => {
 const ProjectsSection = () => {
   return (
     <section id="projects" data-testid="projects">
-      <h2 className={styles.sectionTitle}>Favorite projects</h2>
+      <h2 className={styles.sectionTitle}>
+        <Trans>Favorite projects</Trans>
+      </h2>
 
       {['p1', 'p2', 'p3'].map((project, index) => (
         <Project displayType={getProjectDisplayType(index)} />

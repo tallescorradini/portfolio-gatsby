@@ -1,0 +1,25 @@
+{
+  "home": "home",
+  "projects": "projects",
+  "contact": "contact",
+
+  "Hello! I'm Talles,": "Hello! I'm Talles,",
+  "Hello! My name is Talles,": "Hello! My name is Talles,",
+  "I build interfaces for the web.": "I build interfaces for the web.",
+  "I’m a Front End Web Developer currently working with ReactJS.": "I’m a Front End Web Developer currently working with ReactJS.",
+  "See projects": "See projects",
+  "Download CV": "Download CV",
+
+  "Favorite projects": "Favorite projects",
+  "Technology stack": "Technology stack",
+  "code": "code",
+
+  "Contact": "Contact",
+  "Name": "Name",
+  "Message": "Message",
+  "Send": "Send",
+  "You can also find me on:": "You can also find me on:",
+
+  "Download my CV": "Download my CV",
+  "Designing and developing this website was fun!": "Designing and developing this website was fun!"
+}
