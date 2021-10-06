@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import { Trans } from 'gatsby-plugin-react-i18next'
+import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './index.module.css'
 import logo from '../../static/logo-192.svg'
@@ -13,6 +14,8 @@ import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 import resumeFile from './downloads/Talles_Corradini_Resume.pdf'
 
 const IndexPage = () => {
+  const { originalPath, language } = useI18next()
+
   return (
     <div>
       <Helmet title="Talles Corradini" />
@@ -36,14 +39,42 @@ const IndexPage = () => {
 
       <footer>
         <div className={styles.footerWrapper}>
-          <a href={resumeFile} target="_blank" download>
-            <Trans>Download my CV</Trans>
-          </a>
-          <p>
-            <Trans>Designing and developing this website was fun!</Trans>
-          </p>
+          <div>
+            <a
+              href={resumeFile}
+              target="_blank"
+              download
+              className={styles.downloadCv}
+            >
+              <Trans>Download my CV</Trans>
+            </a>
 
-          <span>Talles Corradini</span>
+            <p>
+              <Trans>Designing and developing this website was fun!</Trans>
+            </p>
+
+            <span>Talles Corradini</span>
+          </div>
+          <ul className={styles.languages}>
+            <li>
+              <Link
+                to={originalPath}
+                language="en"
+                className={styles[`${language === 'en' ? 'active' : ''}`]}
+              >
+                English (US)
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={originalPath}
+                language="pt"
+                className={styles[`${language === 'pt' ? 'active' : ''}`]}
+              >
+                Português (BR)
+              </Link>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>

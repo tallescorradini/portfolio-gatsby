@@ -124,6 +124,28 @@ footer * {
   max-width: 1300px;
 }
 
+.download-cv {
+  margin-bottom: 1rem;
+}
+
+.languages {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.languages > li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.languages .active {
+  text-decoration: none;
+  pointer-events: none;
+  color: #3b3b3b;
+}
+
 @media only screen and (min-width: 600px) {
   .logo > span {
     display: inline;
@@ -137,6 +159,15 @@ footer * {
 @media only screen and (min-width: 900px) {
   .footer-wrapper {
     flex-direction: row;
-    align-items: center;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .languages > li:last-child {
+    margin-right: 1rem;
   }
 }
