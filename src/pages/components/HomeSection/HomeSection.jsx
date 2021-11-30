@@ -2,9 +2,8 @@ import React from 'react'
 import { Trans } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './HomeSection.module.css'
-import resumeFile from '../../../pages/downloads/Talles_Corradini_Resume.pdf'
 
-const HomeSection = () => {
+const HomeSection = ({ resumeFile }) => {
   return (
     <section id="home" data-testid="home" className={styles.section}>
       <div className={styles.headingContainer}>
@@ -35,7 +34,7 @@ const HomeSection = () => {
             target="_blank"
             download
           >
-            <Trans>Download CV</Trans>
+            <Trans>Download Resume</Trans>
           </a>
         </div>
       </div>
