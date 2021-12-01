@@ -146,7 +146,7 @@
     margin-left: -5vw;
   }
 
-  .button-wrapper > button {
+  .button-wrapper > a {
     width: 10rem;
     margin-right: 1rem;
   }
@@ -174,7 +174,7 @@
 
   .description-box {
     margin-right: -4rem;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 2rem 3rem;
 
     background: #efefef;
     border-radius: 0.5rem;
@@ -210,10 +210,10 @@
 
     position: static;
 
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 
-  .button-wrapper > button {
+  .button-wrapper > a {
     margin-right: 0;
     margin-left: 1rem;
   }
@@ -238,10 +238,10 @@
   .project.secondary .description-box {
     margin-right: 0;
     margin-left: -5rem;
-    padding: 1rem 5rem;
+    padding: 1rem 5rem 2rem 5rem;
   }
 
-  .project.secondary .button-wrapper > button {
+  .project.secondary .button-wrapper > a {
     margin-left: 0;
     margin-right: 1rem;
   }

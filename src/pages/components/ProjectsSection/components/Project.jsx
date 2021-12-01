@@ -4,19 +4,14 @@ import { Trans, useTranslation } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './Project.module.css'
 
-const Project = ({ displayType }) => {
+const Project = ({ project, displayType }) => {
   const { t } = useTranslation()
   return (
     <article className={`${styles.project} ${styles[displayType]}`}>
       <div className={styles.contentBox}>
         <div className={styles.descriptionBox}>
-          <h3 className={styles.title}>Gatsby Portfolio</h3>
-          <p>
-            Conheça alguns dos meus projetos, portfólio Seção pra resumir e
-            React.js de projeto talvez principais Firebase tecnologias. Conheça
-            alguns dos meus projetos, portfólio Seção pra resumir e React.js de
-            projeto talvez principais Firebase tecnologias.
-          </p>
+          <h3 className={styles.title}>{project.title}</h3>
+          <p>{project.description}</p>
         </div>
 
         <section className={styles.sectionTech}>
@@ -24,29 +19,37 @@ const Project = ({ displayType }) => {
             <Trans>Technology stack</Trans>
           </h4>
           <ul role="list">
-            <li>Gatsby</li>
-            <li>Jest</li>
-            <li>React-testing-library</li>
-            <li>CSS modules</li>
-            <li>Gatsby</li>
-            <li>Jest</li>
-            <li>React-testing-library</li>
-            <li>CSS modules</li>
+            {project.technologies.map(technology => (
+              <li key={technology}>{technology}</li>
+            ))}
           </ul>
         </section>
       </div>
 
       <div className={styles.linksContainer}>
         <div className={styles.imageContainer}>
-          <img
-            src="https://via.placeholder.com/800x450"
-            alt="Website snapshot"
-          />
+          <img src={project.image.src} alt={project.image.alt} />
         </div>
 
         <div className={styles.buttonWrapper}>
-          <button className={styles.buttonFilled}>site</button>
-          <button className={styles.buttonOutlined}>{`<${t('code')}/>`}</button>
+          {project.siteUrl ? (
+            <a
+              href={project.siteUrl}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.buttonFilled}
+            >
+              site
+            </a>
+          ) : null}
+          {project.codeUrl ? (
+            <a
+              href={project.codeUrl}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.buttonOutlined}
+            >{`<${t('code')}/>`}</a>
+          ) : null}
         </div>
       </div>
     </article>

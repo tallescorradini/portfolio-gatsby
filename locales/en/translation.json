@@ -11,6 +11,15 @@
   "Download Resume": "Download Resume",
 
   "Favorite projects": "Favorite projects",
+
+  "Favorite Channels": "Favorite Channels",
+  "A multilingual web app to organize Youtube subscriptions in meaningful categories. All subscriptions and channel activities are fetched using the Youtube API, and users can sign up to save their preferences.": "A multilingual web app to organize Youtube subscriptions in meaningful categories. All subscriptions and channel activities are fetched using the Youtube API, and users can sign up to save their preferences.",
+  "Screenshot of the web app Favorite Channels": "Screenshot of the web app Favorite Channels",
+
+  "Personal Portfolio": "Personal Portfolio",
+  "I had been curious about static site generation for a while, so I have decided to try GatsbyJS. In the process, I also challenged myself to add multiple language support for both Brazilian Portuguese and English. ": "I had been curious about static site generation for a while, so I have decided to try GatsbyJS. In the process, I also challenged myself to add multiple language support for both Brazilian Portuguese and English. ",
+  "Screenshot of my personal portfolio website": "Screenshot of my personal portfolio website",
+
   "Technology stack": "Technology stack",
   "code": "code",
 
