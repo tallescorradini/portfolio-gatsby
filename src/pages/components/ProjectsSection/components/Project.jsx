@@ -4,7 +4,10 @@ import { Trans, useTranslation } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './Project.module.css'
 
-const Project = ({ project, displayType }) => {
+const Project = ({
+  project = { technologies: [], image: {} },
+  displayType,
+}) => {
   const { t } = useTranslation()
   return (
     <article className={`${styles.project} ${styles[displayType]}`}>
