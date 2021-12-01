@@ -24,3 +24,8 @@ It is a multilingual website where I share information about myself, showcase so
 - Getting started with GatsbyJS - [The Great Gatsby Bootcamp by Andrew Mead](https://www.youtube.com/watch?v=8t0vNu2fCCM&t=15478s&ab_channel=AndrewMead)
 - Implementing quality assurance in GatsbyJS - [Article by Kalin Chernev] (https://kalinchernev.github.io/)
 - Implementing internationalization with GatsbyJS - [Gatsby Guide] (https://www.gatsbyjs.com/docs/how-to/adding-common-features/localization-i18n/)
+
+## Screenshot
+- Home page:
+![Home page](https://user-images.githubusercontent.com/43918107/144257891-5d1abc8d-3c99-4b97-a65b-843acdf19c75.png)
+
