@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
-import { Trans } from 'gatsby-plugin-react-i18next'
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './ContactSection.module.css'
 
@@ -120,15 +120,19 @@ const ContactSection = () => {
 export default ContactSection
 
 const Alert = ({ severity, className, onClose }) => {
+  const { t } = useTranslation()
+
   const content = {
     success: {
-      message: 'Message sent!',
-      details: 'I appreciate you reaching out.',
+      message: t('Message sent!'),
+      details: t('I appreciate you reaching out.'),
       style: styles.alertSuccess,
     },
     error: {
-      message: 'Something went wrong!',
-      details: 'Please, try reaching out through any of my social media links.',
+      message: t('Something went wrong!'),
+      details: t(
+        'Please, try reaching out through any of my social media links.'
+      ),
       style: styles.alertError,
     },
   }
