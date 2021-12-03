@@ -147,6 +147,7 @@
   }
 
   .button-wrapper > a {
+    display: inline-block;
     width: 10rem;
     margin-right: 1rem;
   }

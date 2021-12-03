@@ -20,6 +20,7 @@ const ProjectsSection = () => {
       ),
       technologies: ['NextJS', 'Firebase', 'Youtube API', 'i18next'],
       codeUrl: 'https://github.com/tallescorradini/favorite-channels',
+      siteUrl: 'https://favorite-channels.vercel.app/',
       image: {
         src: 'https://user-images.githubusercontent.com/43918107/144124411-df88c17d-dd0a-4965-a82b-662eb53e2a4c.png',
         alt: t('Screenshot of the web app Favorite Channels'),
