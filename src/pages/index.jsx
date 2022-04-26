@@ -17,7 +17,10 @@ import resumePT from './downloads/Talles_Campos_Corradini-Curriculo.pdf'
 const IndexPage = () => {
   const { originalPath, language } = useI18next()
 
-  const resumeFile = language === 'en' ? resumeEN : resumePT
+  const resume =
+    language === 'en'
+      ? { file: resumeEN, filename: 'Talles Campos Corradini - Resume' }
+      : { file: resumePT, filename: 'Talles Campos Corradini - Currículo' }
 
   return (
     <div>
@@ -33,7 +36,7 @@ const IndexPage = () => {
         </div>
       </header>
       <main>
-        <HomeSection resumeFile={resumeFile} />
+        <HomeSection resume={resume} />
 
         <ProjectsSection />
 
@@ -44,9 +47,9 @@ const IndexPage = () => {
         <div className={styles.footerWrapper}>
           <div>
             <a
-              href={resumeFile}
+              href={resume.file}
               target="_blank"
-              download
+              download={resume.filename}
               className={styles.downloadCv}
             >
               <Trans>Download My Resume</Trans>

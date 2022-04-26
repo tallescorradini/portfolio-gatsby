@@ -3,7 +3,7 @@ import { Trans } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './HomeSection.module.css'
 
-const HomeSection = ({ resumeFile }) => {
+const HomeSection = ({ resume }) => {
   return (
     <section id="home" data-testid="home" className={styles.section}>
       <div className={styles.headingContainer}>
@@ -29,10 +29,10 @@ const HomeSection = ({ resumeFile }) => {
             <Trans>See projects</Trans>
           </a>
           <a
-            href={resumeFile}
+            href={resume?.file}
+            download={resume?.filename}
             className={styles.buttonOutlined}
             target="_blank"
-            download
           >
             <Trans>Download Resume</Trans>
           </a>
