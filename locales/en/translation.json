@@ -3,10 +3,9 @@
   "projects": "projects",
   "contact": "contact",
 
-  "Hello! I'm Talles,": "Hello! I'm Talles,",
-  "Hello! My name is Talles,": "Hello! My name is Talles,",
-  "I build interfaces for the web.": "I build interfaces for the web.",
-  "I’m a Front End Web Developer currently working with ReactJS.": "I’m a Front End Web Developer currently working with ReactJS.",
+  "homeHeading": "I code websites <br />so <highlight>you don't have to.</highlight>",
+  "homeSubHeading": "Hello, my name is Talles and I am a freelance <bold>front-end developer</bold> that builds custom web applications with HTML, CSS, JavaScript and React",
+
   "See projects": "See projects",
   "Download Resume": "Download Resume",
 

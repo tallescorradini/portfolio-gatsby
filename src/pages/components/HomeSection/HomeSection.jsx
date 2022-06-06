@@ -7,22 +7,24 @@ const HomeSection = ({ resume }) => {
   return (
     <section id="home" data-testid="home" className={styles.section}>
       <div className={styles.headingContainer}>
-        <h1 className={styles.introduction}>
-          <Trans>Hello! I'm Talles,</Trans>
-        </h1>
-        <h1 className={styles.introductionLarge}>
-          <Trans>Hello! My name is Talles,</Trans>
+        <h1 className={styles.title}>
+          <Trans
+            i18nKey="homeHeading"
+            defaults="I code webistes <br />so  <highlight>you don't have to</highlight>"
+            components={{
+              br: <br />,
+              highlight: <span className={styles.highlight} />,
+            }}
+          />
         </h1>
 
-        <h2 className={styles.title}>
-          <Trans>I build interfaces for the web.</Trans>
+        <h2 className={styles.subtitle}>
+          <Trans
+            i18nKey="homeSubHeading"
+            defaults="Hello, my name is Talles and I am a freelance <bold>front-end developer</bold> that builds custom web applications with HTML, CSS, JavaScript and React"
+            components={{ bold: <span style={{ fontWeight: '700' }} /> }}
+          />
         </h2>
-
-        <h3 className={styles.subtitle}>
-          <Trans>
-            I’m a Front End Web Developer currently working with ReactJS.
-          </Trans>
-        </h3>
 
         <div className={styles.buttonWrapper}>
           <a href="#projects" className={styles.buttonFilled}>
