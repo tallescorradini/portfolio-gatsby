@@ -7,7 +7,7 @@ const HomeSection = ({ resume }) => {
   return (
     <section id="home" data-testid="home" className={styles.section}>
       <div className={styles.headingContainer}>
-        <h1 className={styles.title}>
+        <h1 className="text-36 text-56:media-600-up text-lexend">
           <Trans
             i18nKey="homeHeading"
             defaults="I code webistes <br />so  <highlight>you don't have to</highlight>"
@@ -18,11 +18,13 @@ const HomeSection = ({ resume }) => {
           />
         </h1>
 
-        <h2 className={styles.subtitle}>
+        <h2
+          className={`text-18 text-20:media-600-up text-normal ${styles.subtitle}`}
+        >
           <Trans
             i18nKey="homeSubHeading"
             defaults="Hello, my name is Talles and I am a freelance <bold>front-end developer</bold> that builds custom web applications with HTML, CSS, JavaScript and React"
-            components={{ bold: <span style={{ fontWeight: '700' }} /> }}
+            components={{ bold: <span className="text-bold" /> }}
           />
         </h2>
 

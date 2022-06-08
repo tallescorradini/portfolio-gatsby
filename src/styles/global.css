@@ -1,0 +1,37 @@
+/* font-family */
+
+.text-lexend {
+  font-family: 'Lexend Deca';
+}
+
+/* font-size */
+
+.text-18 {
+  font-size: 1.125rem;
+  line-height: 160%;
+}
+
+.text-36 {
+  font-size: 2.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  .text-56\:media-600-up {
+    font-size: 3.5rem;
+  }
+
+  .text-20\:media-600-up {
+    font-size: 1.25rem;
+    line-height: 160%;
+  }
+}
+
+/* font-weight */
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-bold {
+  font-weight: 700;
+}
