@@ -1,31 +1,44 @@
 import React from 'react'
-import { Trans } from 'gatsby-plugin-react-i18next'
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './HomeSection.module.css'
 
 const HomeSection = ({ resume }) => {
+  const { t } = useI18next()
+
   return (
     <section id="home" data-testid="home" className={styles.section}>
       <div className={styles.headingContainer}>
-        <h1 className="text-36 text-56:media-600-up text-lexend">
-          <Trans
-            i18nKey="homeHeading"
-            defaults="I code webistes <br />so  <highlight>you don't have to</highlight>"
-            components={{
-              br: <br />,
-              highlight: <span className={styles.highlight} />,
-            }}
-          />
+        <h1 className="text-36 text-56:media-600-up text-lexend text-pre">
+          {t('homeSection.heading.text').replace(
+            t('homeSection.heading.highlightedText'),
+            ''
+          )}
+
+          <span className={styles.highlight}>
+            {t('homeSection.heading.highlightedText')}
+          </span>
         </h1>
 
         <h2
           className={`text-18 text-20:media-600-up text-normal ${styles.subtitle}`}
         >
-          <Trans
-            i18nKey="homeSubHeading"
-            defaults="Hello, my name is Talles and I am a freelance <bold>front-end developer</bold> that builds custom web applications with HTML, CSS, JavaScript and React"
-            components={{ bold: <span className="text-bold" /> }}
-          />
+          {t('homeSection.subheading.text')
+            .split(t('homeSection.subheading.highlightedText'))
+            .map((substring, index) => (
+              <span key={substring}>
+                {index === 0 ? (
+                  <>
+                    {substring}
+                    <span className="text-bold">
+                      {t('homeSection.subheading.highlightedText')}
+                    </span>
+                  </>
+                ) : (
+                  substring
+                )}
+              </span>
+            ))}
         </h2>
 
         <div className={styles.buttonWrapper}>

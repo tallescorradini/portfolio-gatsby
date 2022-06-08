@@ -35,3 +35,7 @@
 .text-bold {
   font-weight: 700;
 }
+
+.text-pre {
+  white-space: pre;
+}

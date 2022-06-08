@@ -4,7 +4,16 @@
   "contact": "contato",
 
   "homeHeading": "Eu programo websites <br />para que <highlight>você não precise.</highlight>",
-  "homeSubHeading": "Olá, meu nome é Talles e sou um <bold>desenvolvedor front-end</bold> freelancer que constrói aplicações web personalizadas usando HTML, CSS, Javascript e React",
+  "homeSection": {
+    "heading": {
+      "text": "Eu programo websites\npara que você não precise.",
+      "highlightedText": "você não precise."
+    },
+    "subheading": {
+      "text": "Olá, meu nome é Talles e sou um desenvolvedor front-end freelancer que constrói aplicações web personalizadas usando HTML, CSS, Javascript e React",
+      "highlightedText": "desenvolvedor front-end"
+    }
+  },
 
   "See projects": "Ver projetos",
   "Download Resume": "Baixar Currículo",

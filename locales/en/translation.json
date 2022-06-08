@@ -3,8 +3,16 @@
   "projects": "projects",
   "contact": "contact",
 
-  "homeHeading": "I code websites <br />so <highlight>you don't have to.</highlight>",
-  "homeSubHeading": "Hello, my name is Talles and I am a freelance <bold>front-end developer</bold> that builds custom web applications with HTML, CSS, JavaScript and React",
+  "homeSection": {
+    "heading": {
+      "text": "I code websites\nso you don't have to.",
+      "highlightedText": "you don't have to."
+    },
+    "subheading": {
+      "text": "Hello, my name is Talles and I am a freelance front-end developer that builds custom web applications with HTML, CSS, JavaScript and React",
+      "highlightedText": "front-end developer"
+    }
+  },
 
   "See projects": "See projects",
   "Download Resume": "Download Resume",
