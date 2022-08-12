@@ -3,7 +3,7 @@ import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 
 import * as styles from './HomeSection.module.css'
 
-const HomeSection = ({ resume }) => {
+const HomeSection = () => {
   const { t } = useI18next()
 
   return (
@@ -44,14 +44,6 @@ const HomeSection = ({ resume }) => {
         <div className={styles.buttonWrapper}>
           <a href="#projects" className={styles.buttonFilled}>
             <Trans>See projects</Trans>
-          </a>
-          <a
-            href={resume?.file}
-            download={resume?.filename}
-            className={styles.buttonOutlined}
-            target="_blank"
-          >
-            <Trans>Download Resume</Trans>
           </a>
         </div>
       </div>

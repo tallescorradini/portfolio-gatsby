@@ -11,16 +11,8 @@ import HomeSection from './components/HomeSection/HomeSection'
 import ContactSection from './components/ContactSection/ContactSection'
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
-import resumeEN from './downloads/Talles_Campos_Corradini-Resume.pdf'
-import resumePT from './downloads/Talles_Campos_Corradini-Curriculo.pdf'
-
 const IndexPage = () => {
   const { originalPath, language } = useI18next()
-
-  const resume =
-    language === 'en'
-      ? { file: resumeEN, filename: 'Talles Campos Corradini - Resume' }
-      : { file: resumePT, filename: 'Talles Campos Corradini - Currículo' }
 
   return (
     <div>
@@ -36,7 +28,7 @@ const IndexPage = () => {
         </div>
       </header>
       <main>
-        <HomeSection resume={resume} />
+        <HomeSection />
 
         <ProjectsSection />
 
@@ -46,15 +38,6 @@ const IndexPage = () => {
       <footer>
         <div className={styles.footerWrapper}>
           <div>
-            <a
-              href={resume.file}
-              target="_blank"
-              download={resume.filename}
-              className={styles.downloadCv}
-            >
-              <Trans>Download My Resume</Trans>
-            </a>
-
             <p>
               <Trans>Designing and developing this website was fun!</Trans>
             </p>
