@@ -9,7 +9,7 @@ const HomeSection = () => {
   return (
     <section id="home" data-testid="home" className={styles.section}>
       <div className={styles.headingContainer}>
-        <h1 className="text-36 text-56:media-600-up text-lexend text-pre">
+        <h1 className="text-36 text-56:media-600-up text-lexend text-pre-wrap">
           {t('homeSection.heading.text').replace(
             t('homeSection.heading.highlightedText'),
             ''
