@@ -5,12 +5,12 @@
 
   "homeSection": {
     "heading": {
-      "text": "I code websites\nso you don't have to.",
-      "highlightedText": "you don't have to."
+      "text": "Front-end web developer working with React",
+      "highlightedText": "React"
     },
     "subheading": {
-      "text": "Hello, my name is Talles and I am a freelance front-end developer that builds custom web applications with HTML, CSS, JavaScript and React",
-      "highlightedText": "front-end developer"
+      "text": "I currently work on freelance projects with Next.js, TypeScript and design in Figma. I also really enjoy building intuitive interfaces that tell a story",
+      "highlightedText": ""
     }
   },
 

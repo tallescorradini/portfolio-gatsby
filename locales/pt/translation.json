@@ -3,15 +3,15 @@
   "projects": "projetos",
   "contact": "contato",
 
-  "homeHeading": "Eu programo websites <br />para que <highlight>você não precise.</highlight>",
+  "homeHeading": "Desenvolvedor Web focado no Front-end com <highlight>React</highlight>",
   "homeSection": {
     "heading": {
-      "text": "Eu programo websites\npara que você não precise.",
-      "highlightedText": "você não precise."
+      "text": "Desenvolvedor Web focado no Front-end com ",
+      "highlightedText": "React"
     },
     "subheading": {
-      "text": "Olá, meu nome é Talles e sou um desenvolvedor front-end freelancer que constrói aplicações web personalizadas usando HTML, CSS, Javascript e React",
-      "highlightedText": "desenvolvedor front-end"
+      "text": "Tenho trabalhado como freelancer desenvolvendo websites em Next.js,  TypeScript e também Figma. Tenho um carinho especial por criar interfaces intuitivas e que geram boas experiências",
+      "highlightedText": ""
     }
   },
 

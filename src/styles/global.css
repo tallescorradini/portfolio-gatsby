@@ -1,3 +1,7 @@
+h1 {
+  max-inline-size: 50rem;
+}
+
 /* font-family */
 
 .text-lexend {
